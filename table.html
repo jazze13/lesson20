@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Задачи</a></li>
+                <li><a href="modal.html">Модалка (xbox)</a></li>
+                <li><a href="proger_cost_calc.html">Стоимость программиста</a></li>
+                <li><a href="table.html">таблица юзеров</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="wrapper">
+
+        <table id="users" border="1">
+            <tr> <td>Имя</td> <td>Фамилия</td> </tr>
+            <tr> <td>Иван</td> <td>Иванов</td> </tr>
+        </table>
+
+        <form action="" name="add_user" id="form_add_user">
+            <input type="text" placeholder="Имя" id="name">
+            <input type="text" placeholder="Фамилия" id="surname">
+            <button>Записать</button>
+        </form>
+
+    </div>
+
+    <script src="assets/js/script-table.js"></script>
+
+</body>
+</html>

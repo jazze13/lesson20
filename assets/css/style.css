@@ -1,0 +1,40 @@
+.ex3__attribute {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 5px;
+}
+
+.modals_wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #00000050;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal {
+  margin: auto;
+  overflow-y: scroll;
+}
+
+table#users {
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=style.css.map */

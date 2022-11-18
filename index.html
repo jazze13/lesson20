@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>JS DOM paragraph style</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head> 
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Задачи</a></li>
+                <li><a href="modal.html">Модалка (xbox)</a></li>
+                <li><a href="proger_cost_calc.html">Стоимость программиста</a></li>
+                <li><a href="table.html">таблица юзеров</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="ex ex1">
+        <h3>1.</h3>
+        <p id ="text">Простое задание по JS</p> 
+        <div>
+            <button id="jsstyle" onclick="js_style()">Style</button>
+        </div>
+    </div>
+    
+    <div class="ex ex2">
+        <h3>2.</h3>
+        <form id="form1" onsubmit="getFormValue(this)">
+            First name: <input type="text" name="fname" value="David"><br>
+            Last name: <input type="text" name="lname" value="Beckham"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+    <div class="ex ex3">
+        <h3>3.</h3>
+        <p>
+            <a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://learn.javascript.ru"></a>
+        </p>
+        <button onclick="getAttributes()">Click here to get  attributes value</button>
+    </div>
+    
+    <div class="ex ex4">
+        <h3>4.</h3>
+        <table id="sampleTable" border="1">
+            <tr><td>Row1 cell1</td><td>Row1 cell2</td></tr>
+            <tr><td>Row2 cell1</td><td>Row2 cell2</td></tr>
+        </table>
+        <br>
+        <input type="button" onclick="insertRow()" value="Insert row"> 
+    </div>
+    
+    <div class="ex ex5">
+        <h3>5.</h3>
+        <table id="myTable" border="1">
+            <tr><td>Row1 cell1</td><td>Row1 cell2</td></tr>
+            <tr><td>Row2 cell1</td><td>Row2 cell2</td></tr>
+            <tr><td>Row3 cell1</td><td>Row3 cell2</td></tr>
+        </table>
+        <form>
+            <input type="button" onclick="changeContent()" value="Change content">
+        </form>
+    </div>
+    
+    <div class="ex ex6">
+        <h3>6.</h3>
+        <table id="table6" border="1">
+        </table>
+        <form>
+            <input type="button" onclick="createTable()" value="Create the table">
+        </form>
+    </div>
+    
+    <div class="ex ex7">
+        <h3>7.</h3>
+        <form>
+            <select id="colorSelect">
+                <option>Red</option>
+                <option>Green</option>
+                <option>White</option>
+                <option>Black</option>
+            </select>
+            <input type="button" onclick="removecolor(this)" value="Select and Remove">
+        </form>
+    </div>
+    
+    <div class="ex ex8">
+        <h3>8.</h3>
+        <form>
+            Select your favorite Color :
+            <select id="mySelect">
+                <option>Red</option>
+                <option>Green</option>
+                <option>Blue</option>
+                <option>White</option> 	
+            </select>
+            <input type="button" onclick="getOptions(this)" value="Count and Output all items">
+        </form>
+    </div>
+    
+    <div class="ex ex9">
+        <h3>9.</h3>
+    </div>
+    
+    <div class="ex ex10">
+        <h3>10.</h3>
+    </div>
+    
+    <div class="ex ex11">
+        <h3>11.</h3>
+    </div>
+    
+    <div class="ex ex12">
+        <h3>12.</h3>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
