@@ -5,45 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="calc">
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Задачи</a></li>
-                <li><a href="modal.html">Модалка (xbox)</a></li>
-                <li><a href="proger_cost_calc.html">Стоимость программиста</a></li>
-                <li><a href="table.html">таблица юзеров</a></li>
-            </ul>
-        </nav>
-    </header>
-    
     <div class="wrapper">
 
-        <form action="" id="proger_cost" name="proger_cost">
-            язык:
-            <select name="language" id="language">
-                <option value="120000">Python</option>
-                <option value="140000">Java</option>
-                <option value="160000">JavaScript</option>
-                <option value="180000">C#</option>
-                <option value="200000">C++</option>
-            </select>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Задачи</a></li>
+                    <li><a href="modal.html">Модалка (xbox)</a></li>
+                    <li><a href="proger_cost_calc.html">Стоимость программиста</a></li>
+                    <li><a href="table.html">таблица юзеров</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
 
-            количество программистов:
-            <input type="range" value="0" id="people_count" min="1" max="50"> <span id="people_count_sub">1</span>
+            <div class="form_container">
+                <form action="" id="proger_cost" name="proger_cost" class="proger_cost">
+                    язык:
+                    <select name="language" id="language">
+                        <option value="120000">Python</option>
+                        <option value="140000">Java</option>
+                        <option value="160000">JavaScript</option>
+                        <option value="180000">C#</option>
+                        <option value="200000">C++</option>
+                    </select>
 
-            сложность задачи:
-            <input type="range" value="1" min="1" max="5" id="difficulty"> <span id="difficulty_sub">легкая</span>
+                    <div class="proger_cost__props">
+                        <h4>количество программистов:</h4>
+                        <input type="range" value="0" id="people_count" min="1" max="50">
+                        <span id="people_count_sub">1</span>
+                    </div>
 
-            время на выполнение:
-            <input type="number" value="" placeholder="Количество месяцев" id="time">
+                    <div class="proger_cost__props">
+                        <h4>сложность задачи:</h4>
+                        <input type="range" value="1" min="1" max="5" id="difficulty">
+                        <span id="difficulty_sub">легкая</span>
+                    </div>
 
-            <button>Посчитать</button>
-        </form>
+                    <div class="proger_cost__props">
+                        <h4>время на выполнение:</h4>
+                        <input type="number" value="" placeholder="Количество месяцев" id="time">
+                    </div>
+
+                    <button>Посчитать</button>
+                </form>
+                <p id="calc_result"></p>
+            </div>
+
+
+        </main>
 
     </div>
+
+    <script src="assets/js/script-calc.js"></script>
 
 </body>
 </html>

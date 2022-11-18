@@ -1,40 +1,45 @@
 'use strict';
 
-// не доделано
-
 const form = document.forms.proger_cost;
 
-form.difficulty.addEventListener('change', function(event) {
+setInterval(() => {
     let sub;
-    switch(this.value) {
-        case 1:
+    switch(form.difficulty.value) {
+        case '1':
             sub = 'легкая';
             break;
-        case 2:
+        case '2':
             sub = 'средняя';
             break;
-        case 3:
+        case '3':
             sub = 'сложная';
             break;
-        case 4:
+        case '4':
             sub = 'очень сложная';
             break;
-        case 5:
+        case '5':
             sub = 'невозможная';
             break;
     }
-
+    
     form.querySelector('#difficulty_sub').textContent = sub;
-})
+    form.querySelector('#people_count_sub').textContent = form.people_count.value;
+}, 10);
 
 form.people_count.addEventListener('change', function(event) {
-    form.querySelector('#people_count_sub').textContent = this.value;
 })
 
-form.addEventListener('sumbit', event => {
+document.querySelector('form button').addEventListener('click', event => {
     event.preventDefault();
 
-    let cost;
-    cost = form.querySelector('select').value;
+    let language = parseInt( form.querySelector('#language').value );
+    let people = parseInt( form.people_count.value );
+    let difficulty = parseInt( form.difficulty.value );
+    let time = 12 / parseInt( form.time.value );
 
+    console.log(`cost = ${language} * ${people} * ${difficulty} * ${time}`)
+    let cost = language * people * difficulty * time;
+
+    const result = document.querySelector('#calc_result');
+    result.textContent = cost;
 })
